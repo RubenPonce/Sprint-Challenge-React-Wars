@@ -5,4 +5,61 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
-/* write your parent styles in here for your App.js */
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 3em;
+}
+button {
+  font-size: 3rem;
+  width: 4em;
+  border-radius: 3px;
+  box-shadow: 10px 10px 25px -20px rgba(0, 0, 0, 0.95);
+  background: black;
+  opacity: 0.75;
+  color: #feda4a;
+  text-transform: uppercase;
+  margin: 0 4em;
+}
+button:hover {
+  opacity: 1;
+
+  margin: 0 4em;
+}
+.card-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+.character-card {
+  box-shadow: 0 0.3px 0.3px rgba(0, 0, 0, 0.1), 0 0.2px;
+  padding: 10px 2px 2px 2px;
+}
+.character-card:hover {
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.95), 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  transform: translateZ(3px);
+}
+
+.character-card {
+  width: 25em;
+  padding: 2em 0;
+  margin: 1em auto;
+  background: black;
+  opacity: 0.75;
+  color: #feda4a;
+  border-radius: 3px;
+  box-shadow: 10px 10px 25px -20px rgba(0, 0, 0, 0.75);
+}
+.character-card h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.character-name {
+  font-weight: 600;
+  font-size: 1.6rem;
+  list-style-type: none;
+  color: #feda4a;
+  font-family: "Gugi", cursive;
+}
+
