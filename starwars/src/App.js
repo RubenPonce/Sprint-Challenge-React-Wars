@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardItem from './components/CardItem'
 import './App.css';
 
 class App extends Component {
@@ -40,12 +41,7 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         {console.log(this.state.starwarsChars)}
         <ul className="card-items">
-          {this.state.starwarsChars.map(array => array.map(character =>
-            <div className="character-card" key={character.name}>
-              <li className="character-name">{character.name}</li>
-              <h3>birth year: {character.birth_year}</h3>
-            </div>
-          ))}
+          {this.state.starwars ? null : <CardItem starwarsChars={this.state.starwarsChars}/>} 
         </ul>
       </div>
     );
