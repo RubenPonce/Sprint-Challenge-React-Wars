@@ -2,7 +2,7 @@
 
 1.  What is React JS and what problems does it try and solve?
 
-- React is a javascript framework that was made by Facebook that tackles the issue of managing and updating states. 
+- React is a javascript framework that was made by Facebook that tackles the issue of managing and updating states. It solves it by managing state on a case by case basis inside of a component
 
 1.  What does it mean to _think_ in react?
 
