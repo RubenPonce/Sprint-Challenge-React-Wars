@@ -11,6 +11,8 @@ class App extends Component {
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters('https://swapi.co/api/people/?page=2');
+
   }
 
   getCharacters = URL => {
@@ -22,7 +24,9 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: [...this.state.starwarsChars, data.results],
+        });
       })
       .catch(err => {
         throw new Error(err);
@@ -32,7 +36,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <h1 className="Header">React Wars</h1>
+        {console.log(this.state.starwarsChars)}
+        <ul className="card-items">
+          {this.state.starwarsChars.map(array => array.map(character =>
+            <div className="character-card" key={character.name}>
+              <li className="character-name">{character.name}</li>
+              <h3>birth year: {character.birth_year}</h3>
+            </div>
+          ))}
+        </ul>
       </div>
     );
   }

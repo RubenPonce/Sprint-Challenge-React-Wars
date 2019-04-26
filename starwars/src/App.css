@@ -5,4 +5,29 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+.card-items{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+.character-card{
+  width: 25em;
+  padding: 2em 0;
+  margin: 1em auto;
+  background: black;
+  opacity: .75;
+  color: #feda4a;
+  border-radius: 3px;
+  box-shadow: 10px 10px 25px -20px rgba(0,0,0,0.75);
+}
+.character-card h3{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.character-name{
+  font-weight: 600;
+  font-size: 1.6rem;
+  list-style-type: none;
+  color: #feda4a;
+}
 /* write your parent styles in here for your App.js */
